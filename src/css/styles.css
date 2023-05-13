@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* responsive images */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 3px 2px 23px -12px rgba(0, 0, 0, 0.57);
+  height: 500px;
+  width: 320px;
+  padding: 15px;
+  text-align: center;
+}
+
+.qr-code {
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.title {
+  color: var(--dark-blue);
+  display: inline-block;
+  font-size: 22px;
+  font-family: var(--font);
+  font-weight: 700;
+  margin-bottom: 15px;
+  width: 250px;
+}
+
+.description {
+  color: var(--grayish-blue);
+  font-family: var(--font);
+  font-size: 15px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  /* Font */
+  --font: "Outfit", sans-serif;
+}
